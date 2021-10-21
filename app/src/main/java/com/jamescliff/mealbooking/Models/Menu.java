@@ -1,13 +1,15 @@
-package com.jamescliff.mealbooking;
+package com.jamescliff.mealbooking.Models;
 
 import java.io.Serializable;
 
 public class Menu implements Serializable {
+    private int id;
     private String name, course, status, image, content_description, location;
     private int price, num_order;
 
-    public Menu(String name, String course, String status, int price, String image, int num_order, String content_description, String location) {
+    public Menu(int id, String name, String course, String status, int price, String image, int num_order, String content_description, String location) {
         this.name = name;
+        this.id = id;
         this.course = course;
         this.status = status;
         this.price = price;
@@ -15,6 +17,14 @@ public class Menu implements Serializable {
         this.num_order = num_order;
         this.content_description = content_description;
         this.location = location;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

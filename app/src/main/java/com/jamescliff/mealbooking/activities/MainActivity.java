@@ -19,6 +19,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Random;
 
 import es.dmoral.toasty.Toasty;
 import okhttp3.ResponseBody;
@@ -56,16 +57,18 @@ public class MainActivity extends AppCompatActivity {
                         if (str != null) {
                             try {
                                 JSONObject jSONObject = new JSONObject(str);
+                                int customerId = Integer.parseInt(randomInt(3));
+                                RetrofitClient.getInstance().getApi().createCustomer(3, "Nairobi Kenya", "0712345678", 0, 0);
                                 String res_email = jSONObject.getString("email");
                                 String res_username = jSONObject.getString("username");
 
                                 SessionManager.getInstance(mContext).createLoginSession();
-                                SessionManager.getInstance(mContext).saveUser(res_email, res_username);
+                                SessionManager.getInstance(mContext).saveUser(3, res_email, res_username);
 
                                 startActivity(new Intent(mContext, HomeActivity.class));
                                 Toasty.success(mContext, "Registered successfully", Toast.LENGTH_LONG).show();
 
-                            } catch (NullPointerException | JSONException e2) {
+                            } catch (Exception e2) {
                                 e2.printStackTrace();
                             }
                         }
@@ -115,6 +118,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private static String randomInt(int i) {
+        StringBuilder sb = new StringBuilder();
+        while (i > 0) {
+            sb.append("0123456789".charAt(new Random().nextInt(3)));
+            i--;
+        }
+        return sb.toString();
     }
 
     public void btnRegister(View view) {

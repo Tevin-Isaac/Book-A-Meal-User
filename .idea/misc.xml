@@ -9,17 +9,29 @@
         <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.35" />
         <entry key="app/src/main/res/drawable/ic_content_paste_black_24dp.xml" value="0.35" />
         <entry key="app/src/main/res/drawable/ic_dish_spoon_knife.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/ic_email_black_24dp.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.35555555555555557" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/ic_local_phone_black_24dp.xml" value="0.36615384615384616" />
+        <entry key="app/src/main/res/drawable/ic_location_on_black_24dp.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_lock_black_24dp.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/ic_neworder.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.36615384615384616" />
         <entry key="app/src/main/res/drawable/price.xml" value="0.3527777777777778" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/font/caudex.xml" value="0.3712962962962963" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/activity_view_menu.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/cart.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/foodmenu.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_customerprofile.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_order.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_orders.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/orders.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/menu/home_menu.xml" value="0.35572916666666665" />
       </map>

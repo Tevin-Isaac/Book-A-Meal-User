@@ -18,8 +18,52 @@ public interface Api {
             @Field("password") String password
     );
 
-    @GET("/models/v1/food")
+    @FormUrlEncoded
+    @POST("models/v1/customer")
+    Call<ResponseBody> createCustomer(
+            @Field("customer") int customer,
+            @Field("address") String address,
+            @Field("contact") String contact,
+            @Field("orders") int orders,
+            @Field("total_sale") int total_sale
+    );
+
+    @FormUrlEncoded
+    @POST("models/v1/order")
+    Call<ResponseBody> makeOrder(
+            @Field("customer") int customer,
+            @Field("payment_status") String payment_status,
+            @Field("delivery_status") String delivery_status,
+            @Field("if_cancelled") boolean if_cancelled,
+            @Field("total_amount") int total_amount,
+            @Field("payment_method") String payment_method,
+            @Field("location") String location,
+            @Field("delivery_boy") String delivery_boy
+    );
+
+    @GET("models/v1/food")
     Call<ResponseBody> getMenu();
+
+    @GET("models/v1/cart")
+    Call<ResponseBody> getCart();
+
+    @GET("models/v1/order")
+    Call<ResponseBody> getOrder();
+
+    @FormUrlEncoded
+    @POST("models/v1/cart")
+    Call<ResponseBody> addToCart(
+            @Field("food") int food,
+            @Field("user") int user,
+            @Field("amount") int amount,
+            @Field("image") String image
+    );
+
+    @POST("auth/v1/login/")
+    @FormUrlEncoded
+    Call<LoginResponse> login(
+            @Field("username") String username,
+            @Field("password") String password);
 
 //    @FormUrlEncoded
 //    @POST("getpaymentbyaccountnumber")

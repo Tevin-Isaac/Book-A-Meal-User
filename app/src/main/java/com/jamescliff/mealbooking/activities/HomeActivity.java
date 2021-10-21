@@ -13,7 +13,9 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.jamescliff.mealbooking.Fragment.CartFragment;
 import com.jamescliff.mealbooking.Fragment.HomeFragment;
+import com.jamescliff.mealbooking.Fragment.OrderFragment;
 import com.jamescliff.mealbooking.R;
 import com.jamescliff.mealbooking.Storage.SessionManager;
 
@@ -33,7 +35,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Meal Booking");
 
-        BottomNavigationView navigationView = findViewById(R.id.chef_bottom_navigation);
+        BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(this);
 
         loadFragment(new HomeFragment());
@@ -53,8 +55,14 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
             case R.id.home:
+                fragment = new HomeFragment();
+                break;
             case R.id.PendingOrders:
+                fragment = new CartFragment();
+                break;
             case R.id.Orders:
+                fragment = new OrderFragment();
+                break;
             case R.id.chefProfile:
                 fragment = new HomeFragment();
                 break;
@@ -74,7 +82,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.logout:
-                sessionManager.logoutUser();
                 return true;
             case R.id.cart:
                 return true;

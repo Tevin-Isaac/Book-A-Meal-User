@@ -31,7 +31,8 @@ public class SessionManager {
         return instance;
     }
 
-    public void saveUser(String email, String username) {
+    public void saveUser(int user_id, String email, String username) {
+        editor.putInt("user_id", user_id);
         this.editor.putString("email", email);
         this.editor.putString("username", username);
         this.editor.commit();
@@ -43,6 +44,10 @@ public class SessionManager {
 
     public String getEmail() {
         return this.pref.getString("email", null);
+    }
+
+    public int getUserId () {
+        return pref.getInt("user_id", 0);
     }
 
     public void setFirstTimeLaunch(boolean z) {

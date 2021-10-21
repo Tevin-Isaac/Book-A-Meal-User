@@ -1,41 +1,44 @@
 package com.jamescliff.mealbooking.activities;
 
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import com.airbnb.lottie.LottieAnimationView;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.jamescliff.mealbooking.R;
 
-public class SplashActivity extends AppCompatActivity {
+import java.time.Instant;
 
-    LottieAnimationView lottie;
+
+
+
+public class SplashActivity extends AppCompatActivity {
+    private static int SPLASH_TIME_OUT = 3000;
+    private TextView appname;
+    private ImageView logo;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        lottie=findViewById(R.id.lottie);
-//        lottie.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
-
+        this.logo = (ImageView) findViewById(R.id.logo);
+        this.appname = (TextView) findViewById(R.id.appname);
+        YoYo.with(Techniques.Bounce).duration(7000).playOn(findViewById(R.id.logo));
+        YoYo.with(Techniques.FadeInUp).duration(5000).playOn(findViewById(R.id.appname));
         new Handler().postDelayed(new Runnable() {
-            @Override
+
             public void run() {
-                Intent i=new Intent(SplashActivity.this,
-                        MainActivity.class);
-                //Intent is used to switch from one activity to another.
-
-                startActivity(i);
-                //invoke the SecondActivity.
-
-                finish();
-                //the current activity will get finished.
+                SplashActivity.this.startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                SplashActivity.this.finish();
             }
-        }, 3000);
+        }, (long) SPLASH_TIME_OUT);
     }
 }

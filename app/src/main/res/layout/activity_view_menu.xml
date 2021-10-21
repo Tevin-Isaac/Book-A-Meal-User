@@ -16,7 +16,6 @@
         android:src="@drawable/placeholder" />
 
 
-
     <Button
         android:id="@+id/price"
         android:layout_width="wrap_content"
@@ -102,7 +101,7 @@
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
-                android:text="Chef Name"
+                android:text="Kenya Food"
                 android:textStyle="bold"
                 android:textColor="@color/gray"
                 android:textSize="14sp" />
@@ -132,7 +131,7 @@
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
-                android:text="Chef Name"
+                android:text="Nairobi"
                 android:textStyle="bold"
                 android:textColor="@color/gray"
                 android:textSize="14sp" />
@@ -152,7 +151,7 @@
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
-                android:text="Chef Name"
+                android:text="Customer Name"
                 android:textStyle="bold"
                 android:textColor="@color/gray"
                 android:textSize="14sp" />

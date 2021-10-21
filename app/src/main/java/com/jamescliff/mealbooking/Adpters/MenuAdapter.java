@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.jamescliff.mealbooking.Menu;
+import com.jamescliff.mealbooking.Models.Menu;
 import com.jamescliff.mealbooking.R;
 import com.jamescliff.mealbooking.activities.ViewMenuActivity;
 
@@ -39,7 +39,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.Holder> {
         Menu menu = menus.get(position);
         Glide
             .with(mContext)
-            .load(menus.get(position).getImage())
+            .load("https://res.cloudinary.com/dohcjt1gt/"+menus.get(position).getImage())
             .centerCrop()
             .placeholder(R.drawable.placeholder)
             .into(holder.menu_image);

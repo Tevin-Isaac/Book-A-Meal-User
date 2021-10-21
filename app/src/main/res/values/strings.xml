@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MealBooking</string>
+    <string name="app_name">Meal Booking</string>
     <string name="logout">Logout</string>
     <string name="cart">Cart</string>
     <!-- TODO: Remove or change this placeholder text -->
