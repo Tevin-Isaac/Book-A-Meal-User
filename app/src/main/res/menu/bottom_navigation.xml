@@ -16,13 +16,13 @@
     <item
         android:id="@+id/Orders"
         android:icon="@drawable/ic_content_paste_black_24dp"
-        android:title="Orders" />
+        android:title="Favorites" />
 
 
     <item
         android:id="@+id/chefProfile"
         android:icon="@drawable/ic_dish_spoon_knife"
-        android:title="Track Orders" />
+        android:title="Profile" />
 
 
 </menu>
