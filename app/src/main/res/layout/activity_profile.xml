@@ -10,7 +10,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.food.ordering.zinger.ui.profile.ProfileActivity">
+        tools:context="com.jamescliff.mealbooking.ProfileActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_close"
-                    android:tint="@android:color/black" />
+                    app:tint="@android:color/black" />
                 <View
                     android:layout_width="0dp"
                     android:layout_height="1dp"
@@ -84,7 +84,7 @@
                 android:gravity="center|start"
                 android:text="Name"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -103,7 +103,7 @@
                 android:gravity="center|start"
                 android:text="Email"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/accent"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -123,7 +123,7 @@
                 android:gravity="center|start"
                 android:text="Number"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/accent"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
 
@@ -160,7 +160,7 @@
                 android:gravity="center|start"
                 android:text="Mobile"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/accent"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -195,7 +195,7 @@
                 android:gravity="center|start"
                 android:text="Campus"
                 android:layout_marginTop="16dp"
-                android:textColor="@color/accent"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -217,7 +217,7 @@
                     android:id="@+id/text_campus_name"
                     android:paddingEnd="8dp"
                     android:paddingBottom="8dp"
-                    android:text="SSN College"
+                    android:text="Moringaschool"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -228,10 +228,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="@string/label_update"
+                android:text="update"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:backgroundTint="@color/accent" />
+                app:backgroundTint="@color/black" />
 
 
         </LinearLayout>

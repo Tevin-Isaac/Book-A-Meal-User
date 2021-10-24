@@ -25,11 +25,11 @@
         style="MaterialDrawerTheme.Light.ActionBar.TranslucentStatus"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:openDrawer="start">
+        tools:openDrawer="start"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"/>
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@"
+                android:background=""
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -73,8 +73,8 @@
                         android:layout_marginEnd="16dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_menu_white_24dp"
-                        android:tint="@android:color/white"
-                        android:visibility="visible" />
+                        android:visibility="visible"
+                        app:tint="@android:color/white" />
 
                     <View
                         android:layout_width="0dp"
@@ -85,7 +85,7 @@
                         android:layout_width="60dp"
                         android:layout_height="40dp"
                         android:src="@drawable/logo_transparent"
-                        android:tint="@android:color/white" />
+                        app:tint="@android:color/white" />
                 </LinearLayout>
 
                 <TextView
@@ -125,22 +125,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/text_search"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/bg_rounded"
-                android:drawableEnd="@drawable/ic_drawer_search_small"
-                android:drawablePadding="8dp"
-                android:fontFamily="@font/open_sans_semibold"
-                android:paddingStart="10dp"
-                android:paddingTop="6dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="6dp"
-                android:text="@string/label_search_outlets_or_dish"
-                android:textSize="12sp" />
+
         </LinearLayout>
 
 
