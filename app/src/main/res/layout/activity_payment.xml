@@ -205,7 +205,7 @@
                                 android:text="Pay"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
-                                app:backgroundTint="@color/colorAccent" />
+                                app:backgroundTint="@color/black" />
 
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -361,7 +361,7 @@
                                 android:text="Pay"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
-                                app:backgroundTint="@color/colorAccent" />
+                                app:backgroundTint="@color/black" />
 
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -450,7 +450,7 @@
                                 android:text="Pay"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
-                                app:backgroundTint="@color/colorAccent" />
+                                app:backgroundTint="@color/black" />
 
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -539,7 +539,7 @@
                                 android:text="Pay"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
-                                app:backgroundTint="@color/colorAccent" />
+                                app:backgroundTint="@color/black" />
 
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>

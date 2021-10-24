@@ -21,7 +21,7 @@
 
     <item
         android:id="@+id/chefProfile"
-        android:icon="@drawable/ic_dish_spoon_knife"
+        android:icon="@drawable/profile"
         android:title="Profile" />
 
 

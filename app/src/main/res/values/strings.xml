@@ -4,4 +4,8 @@
     <string name="cart">Cart</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_search_outlets_or_dish" />
+    <string name="label_update" />
+    <string name="label_outlets" />
+    <string name="hint_feedback_optional" />
 </resources>

@@ -46,6 +46,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'com.airbnb.android:lottie:3.7.0'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+
 
 
 }
