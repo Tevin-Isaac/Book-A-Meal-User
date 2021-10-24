@@ -81,9 +81,9 @@
                         android:layout_gravity="end"
                         android:fontFamily="@font/open_sans_bold"
                         android:gravity="end"
-                        android:textColor="@color/colorAccentLight"
+                        android:textColor="@color/black"
                         android:textSize="14sp"
-                        tools:text="$50" />
+                        tools:text="kshs 350" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -106,7 +106,7 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/open_sans_bold"
                 android:maxLines="2"
-                android:textColor="@color/colorAccentLight"
+                android:textColor="@color/black"
                 android:textSize="12sp"
                 tools:text="1 X Chicken noodles\n2 X Lemon Juice" />
 
@@ -180,7 +180,7 @@
                     android:text="track order"
                     android:textSize="12sp"
                     android:visibility="visible"
-                    app:backgroundTint="@color/colorAccent"
+                    app:backgroundTint="@color/black"
                     app:cornerRadius="20dp"
                     app:elevation="0dp" />
 
